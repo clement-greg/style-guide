@@ -1,0 +1,465 @@
+<div class="container">
+    <h1>Cogent Style Guide</h1>
+
+    <div class="flex-container top-margin-40">
+        <div class="flex1">
+            <mat-card>
+                <h1>This is H1</h1>
+                <br>
+                <h2 class="sub-heading">This is H2.sub-heading</h2>
+                <br>
+                <p class="info">This is an information block. It can be created with a paragraph tag and the .info class
+                </p>
+                <br>
+                <div class="data-label">This is a data label</div>
+                <br>
+                <div>Plain Text</div>
+
+                <h1 class="big-data">132</h1>
+                <div class="data-label">Big Data</div>
+            </mat-card>
+        </div>
+        <div class="flex1 code">
+            <pre>
+&lt;h1&gt;This is H1&lt;/h1&gt;
+&lt;br&gt;
+&lt;h2 class=&quot;sub-heading&quot;&gt;This is H2.sub-heading&lt;/h2&gt;
+&lt;br&gt;
+&lt;p class=&quot;info&quot;&gt;This is an information block.  
+It can be created with a paragraph tag and the .info class&lt;/p&gt;
+&lt;br&gt;
+&lt;div class=&quot;data-label&quot;&gt;This is a data label&lt;/div&gt;
+&lt;br&gt;
+&lt;div&gt;Plain Text&lt;/div&gt;
+</pre>
+        </div>
+    </div>
+
+    <div class="flex-container  top-margin-40">
+        <div class="flex1">
+            <mat-card>
+                <h2 class="sub-heading">Form Fields</h2>
+                <mat-form-field appearance="outline">
+                    <mat-label>Field Label</mat-label>
+                    <input matInput>
+                </mat-form-field><br>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Option 1</mat-radio-button>
+                    <mat-radio-button value="2">Option 2</mat-radio-button>
+                </mat-radio-group><br>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Select Box</mat-label>
+                    <mat-select [(ngModel)]="selectedItem">
+                        <mat-option value="Option 1">Option 1</mat-option>
+                        <mat-option value="Option 2">Option 2</mat-option>
+                        <mat-option value="Option 3">Option 3</mat-option>
+                        <mat-option value="Option 4">Option 4</mat-option>
+                        <mat-option value="Option 5">Option 5</mat-option>
+                        <mat-option value="Option 6">Option 6</mat-option>
+                    </mat-select>
+                </mat-form-field><br>
+                <mat-slide-toggle>Slide me!</mat-slide-toggle>
+                <mat-slider>
+                    <input matSliderThumb>
+                </mat-slider>
+
+            </mat-card>
+        </div>
+        <div class="flex1 code">
+            <code>
+                <pre>
+&lt;h2 class=&quot;sub-heading&quot;&gt;Form Fields&lt;/h2&gt;
+&lt;mat-form-field appearance=&quot;outline&quot;&gt;
+    &lt;mat-label&gt;Field Label&lt;/mat-label&gt;
+    &lt;input matInput&gt;
+&lt;/mat-form-field&gt;&lt;br&gt;
+&lt;mat-radio-group aria-label=&quot;Select an option&quot;&gt;
+    &lt;mat-radio-button value=&quot;1&quot;&gt;Option 1&lt;/mat-radio-button&gt;
+    &lt;mat-radio-button value=&quot;2&quot;&gt;Option 2&lt;/mat-radio-button&gt;
+&lt;/mat-radio-group&gt;&lt;br&gt;
+
+&lt;mat-form-field appearance=&quot;outline&quot;&gt;
+    &lt;mat-label&gt;Select Box&lt;/mat-label&gt;
+    &lt;mat-select [(ngModel)]=&quot;selectedItem&quot;&gt;
+        &lt;mat-option value=&quot;Option 1&quot;&gt;Option 1&lt;/mat-option&gt;
+        &lt;mat-option value=&quot;Option 2&quot;&gt;Option 2&lt;/mat-option&gt;
+        &lt;mat-option value=&quot;Option 3&quot;&gt;Option 3&lt;/mat-option&gt;
+        &lt;mat-option value=&quot;Option 4&quot;&gt;Option 4&lt;/mat-option&gt;
+        &lt;mat-option value=&quot;Option 5&quot;&gt;Option 5&lt;/mat-option&gt;
+        &lt;mat-option value=&quot;Option 6&quot;&gt;Option 6&lt;/mat-option&gt;
+    &lt;/mat-select&gt;
+&lt;/mat-form-field&gt;&lt;br&gt;
+&lt;mat-slide-toggle&gt;Slide me!&lt;/mat-slide-toggle&gt;
+&lt;mat-slider&gt;
+    &lt;input matSliderThumb&gt;
+&lt;/mat-slider&gt;
+
+    </pre>
+            </code>
+        </div>
+    </div>
+
+    <div class="flex-container top-margin-40">
+        <div class="flex1">
+            <mat-card>
+                <h2 class="sub-heading">Animations</h2>
+                <div class="lottie-container">
+                    <lottie-player src="https://lottie.host/b8548132-89a6-47cd-8118-4df94aaa2761/oS4EENY7FI.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/cc269a65-10c5-4615-b998-7e1b63127ce8/MfbXkFkVoI.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/b6c85405-dd2d-4229-8d34-c1ead1329b13/4BOELYm1nM.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/34b996e5-4b97-4b1f-ad2e-d15ae251ad82/KlgYxISXQC.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/5a3291f1-8461-472f-a52b-5ce013db5e18/cUvLkWrqO5.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/1bd82f45-cf1f-4881-a2c0-d7c9f54bb8c8/9J80MIcVrb.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/3fe37eb6-97ed-4971-bfd0-05854f5d68bd/ClWQWXbGDW.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/43c11b19-f779-4539-bb68-0197bef4905c/FyQsIGh0Hs.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/95cd1609-f57e-4100-84fe-9015fe28de8f/BqKNdbiqB7.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/fccee11d-e1a8-491e-9d05-276e0324faa6/rjywfpUeJj.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/fd4d1e86-6bd0-4dd3-ba77-43d0865275df/61CPgPX7j2.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/e9f04e6f-85ae-4cdf-b4ee-0197fd44553f/YQNk4lKl2K.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/b9462c1b-21e7-4e34-ae8f-0f04211c63c0/LM38FUVF1g.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/be34b8f8-cdb9-4ab8-91af-abf9f0f914ae/6SuVVwBQJl.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/6af2b6a9-bc34-4ec8-9abc-5078c1711bf6/UpoCPIf3lt.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/84b7a1a3-95a8-40a6-9473-e2d94f18e67c/SK0mtJWJdZ.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                    <lottie-player src="https://lottie.host/2f01a5c5-8107-47a1-9edd-672f8ff965e3/3mCF3be6yz.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+
+                </div>
+            </mat-card>
+        </div>
+        <div class="flex1 code">
+            <pre>
+&lt;lottie-player 
+    src=&quot;https://lottie.host/b8548132-89a6-47cd-8118-4df94aaa2761/oS4EENY7FI.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player 
+    src=&quot;https://lottie.host/cc269a65-10c5-4615-b998-7e1b63127ce8/MfbXkFkVoI.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player 
+    src=&quot;https://lottie.host/b6c85405-dd2d-4229-8d34-c1ead1329b13/4BOELYm1nM.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player 
+    src=&quot;https://lottie.host/34b996e5-4b97-4b1f-ad2e-d15ae251ad82/KlgYxISXQC.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player 
+    src=&quot;https://lottie.host/5a3291f1-8461-472f-a52b-5ce013db5e18/cUvLkWrqO5.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player 
+    src=&quot;https://lottie.host/1bd82f45-cf1f-4881-a2c0-d7c9f54bb8c8/9J80MIcVrb.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player 
+    src=&quot;https://lottie.host/3fe37eb6-97ed-4971-bfd0-05854f5d68bd/ClWQWXbGDW.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player 
+    src=&quot;https://lottie.host/43c11b19-f779-4539-bb68-0197bef4905c/FyQsIGh0Hs.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player src=&quot;https://lottie.host/95cd1609-f57e-4100-84fe-9015fe28de8f/BqKNdbiqB7.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player src=&quot;https://lottie.host/fccee11d-e1a8-491e-9d05-276e0324faa6/rjywfpUeJj.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player src=&quot;https://lottie.host/fd4d1e86-6bd0-4dd3-ba77-43d0865275df/61CPgPX7j2.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player src=&quot;https://lottie.host/e9f04e6f-85ae-4cdf-b4ee-0197fd44553f/YQNk4lKl2K.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player src=&quot;https://lottie.host/b9462c1b-21e7-4e34-ae8f-0f04211c63c0/LM38FUVF1g.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player src=&quot;https://lottie.host/be34b8f8-cdb9-4ab8-91af-abf9f0f914ae/6SuVVwBQJl.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player src=&quot;https://lottie.host/6af2b6a9-bc34-4ec8-9abc-5078c1711bf6/UpoCPIf3lt.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player src=&quot;https://lottie.host/84b7a1a3-95a8-40a6-9473-e2d94f18e67c/SK0mtJWJdZ.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+&lt;lottie-player src=&quot;https://lottie.host/2f01a5c5-8107-47a1-9edd-672f8ff965e3/3mCF3be6yz.json&quot;
+    background=&quot;transparent&quot; speed=&quot;1&quot; loop autoplay&gt;
+&lt;/lottie-player&gt;
+            </pre>
+        </div>
+    </div>
+
+    <div class="flex-container top-margin-40">
+        <div class="flex1">
+            <mat-card>
+                <h2 class="sub-heading">Stories</h2>
+                <div class="data-label">Home Maintennace Intro</div>
+                <lottie-player src="https://lottie.host/240258f0-d2fd-4bea-941b-c42249c8e41f/V06d2zPEDE.json"
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+                <div class="data-label top-margin-40">Home Maintennace Teaser</div>
+                <lottie-player src="https://lottie.host/9abc4b26-bee5-448d-9eeb-39c1d8e77302/VbvYTZvwjx.json"
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+
+                <div class="data-label top-margin-40">Request Service Confirmation</div>
+                <lottie-player src="https://lottie.host/76ed3d55-194b-42ea-861c-bb248d5b509a/hfHbdP5KWX.json"
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+            </mat-card>
+        </div>
+        <div class="flex1 code">
+            <pre></pre>
+        </div>
+    </div>
+
+    <div class="flex-container top-margin-40">
+        <div class="flex1">
+            <mat-card>
+                <h2 class="sub-heading">Layouts</h2>
+                <mat-tab-group>
+                    <mat-tab label="First"> Content 1 </mat-tab>
+                    <mat-tab label="Second"> Content 2 </mat-tab>
+                    <mat-tab label="Third"> Content 3 </mat-tab>
+                </mat-tab-group>
+                <br><br><br>
+
+                <mat-card>
+                    Card
+                </mat-card>
+
+                <div class="fancy-container" style="min-height: 200px;margin-top: 30px">
+                    <h1>Fancy Container</h1>
+                </div>
+                <br><br>
+
+                <button mat-button mat-raised-button (click)="sideBarShown = true">
+                 Show Side Panel
+                </button>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th class="right">Column 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table mono">
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th class="right">Column 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                        <tr>
+                            <td>Field 1</td>
+                            <td>1/1/2000</td>
+                            <td class="right">$132.33</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </mat-card>
+        </div>
+        <div class="flex1 code">
+            <pre>
+&lt;mat-tab-group&gt;
+&lt;mat-tab label=&quot;First&quot;&gt; Content 1 &lt;/mat-tab&gt;
+&lt;mat-tab label=&quot;Second&quot;&gt; Content 2 &lt;/mat-tab&gt;
+&lt;mat-tab label=&quot;Third&quot;&gt; Content 3 &lt;/mat-tab&gt;
+&lt;/mat-tab-group&gt;
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="flex-container top-margin-40">
+        <div class="flex1">
+            <mat-card>
+                <h2 class="sub-heading">Buttons</h2>
+
+
+                <button mat-button class="toggle-button" [class.selected]="toggleSelected"
+                    (click)="toggleSelected = !toggleSelected">Toggle</button><br>
+
+                <button mat-button mat-raised-button color="primary">Primary Button</button><br>
+                <button mat-button mat-raised-button>Secondary Button</button><br>
+                <button mat-button mat-raised-button color="primary" class="arrow-btn">Arrow Button</button><br>
+                <button mat-fab [matMenuTriggerFor]="menu"><br>
+                    <mat-icon>add</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Item 1</button>
+                    <button mat-menu-item>Item 2</button>
+                </mat-menu><br>
+
+                <button mat-button mat-raised-button color="primary" [disabled]="saving" (click)="save()">
+                    <mat-spinner *ngIf="saving"></mat-spinner> Save Button
+                </button>
+            </mat-card>
+        </div>
+        <div class="flex1 code">
+            <pre>
+&lt;button mat-button class=&quot;toggle-button&quot; 
+    [class.selected]=&quot;toggleSelected&quot;
+    (click)=&quot;toggleSelected = !toggleSelected&quot;&gt;Toggle&lt;/button&gt;
+
+&lt;button mat-button mat-raised-button 
+    color=&quot;primary&quot;&gt;Primary Button&lt;/button&gt;
+
+&lt;button mat-button mat-raised-button color=&quot;primary&quot; 
+    class=&quot;arrow-btn&quot;&gt;Arrow Button&lt;/button&gt;
+
+&lt;button mat-fab [matMenuTriggerFor]=&quot;menu&quot;&gt;
+    &lt;mat-icon&gt;add&lt;/mat-icon&gt;
+&lt;/button&gt;
+
+&lt;mat-menu #menu=&quot;matMenu&quot;&gt;
+    &lt;button mat-menu-item&gt;Item 1&lt;/button&gt;
+    &lt;button mat-menu-item&gt;Item 2&lt;/button&gt;
+&lt;/mat-menu&gt;
+
+&lt;button mat-button mat-raised-button color=&quot;primary&quot; 
+    [disabled]=&quot;saving&quot; (click)=&quot;save()&quot;&gt;
+    &lt;mat-spinner *ngIf=&quot;saving&quot;&gt;&lt;/mat-spinner&gt; Save Button
+&lt;/button&gt;
+</pre>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="side-bar-expander" *ngIf="sideBarShown">
+    <button  class="close-btn" (click)="sideBarShown = false">
+        <mat-icon>close</mat-icon>
+    </button>
+
+    <h1>Side Panel</h1>
+    <p class="info">You can an ancellary information in the side panel that can be invoked through a button</p>
+</div>

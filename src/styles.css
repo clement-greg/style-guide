@@ -1,1 +1,264 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+    font-family: 'Reckless Regular';
+    src: url(./assets/fonts/Reckless-Regular.otf);
+}
+@font-face {
+    font-family: ETmodules;
+    src: url(./assets/fonts/modules.ttf);
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    display: table;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+mat-card.mat-mdc-card {
+    width: 100%;
+    box-shadow: 1px 1px 24px 1px #0000001a;
+    border-radius: 17px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container>div:not(:first-child) {
+    margin-left: 20px;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.code {
+    background-color: #262520;
+    padding: 30px;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 1px 1px 8px 1px #262520;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.info {
+    font-family: Saruban Light,Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.4em;
+}
+
+.mat-h1, .mat-headline-5, .mat-typography .mat-h1, .mat-typography .mat-headline-5, .mat-typography h1 {
+    font-family: Reckless Regular,Helvetica,Arial,Lucida,sans-serif;
+    font-size: 40px;
+    color: #646464;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.sub-heading,
+mat-card-title, h2.sub-heading {
+    font-size: 32px !important;
+    color: rgba(0, 0, 0, .4);
+    font-family: "Open Sans";
+    text-transform: lowercase;
+    font-weight: 100;
+    /* white-space: nowrap; */
+}
+
+.toggle-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 5px;
+    background-color: #89AAE6;
+    visibility: hidden;
+    transform: scaleX(0) scaleY(0);
+    transition: all .3s ease-in-out 0s;
+    height: 100%;
+    border-radius: 5px;
+    top: 5px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.toggle-button.selected, .mat-mdc-button:not(:disabled).toggle-button.selected {
+    color: #fff;
+    z-index: 1;
+}
+
+.toggle-button.selected::before {
+    transform: scaleX(1) scaleY(1);
+    visibility: visible;
+}
+
+button.mat-mdc-raised-button, a.mat-mdc-raised-button {
+    border-radius: 14px;
+}
+
+.mat-mdc-raised-button.mat-primary {
+    color: #fff!important;
+    border-width: 0px!important;
+    border-radius: 14px;
+    font-size: 18px;
+    background-image: linear-gradient(99deg,#dd823b 0%,#ff612f 100%);
+    transition: all .5s ease 0ms;
+    padding: 12px 45px!important;
+    text-transform: none!important;
+    box-shadow: none;
+}
+
+.mat-mdc-raised-button.mat-primary:disabled, .mat-raised-button.mat-primary:hover:disabled {
+    background-color: #ccc;
+    background-image: none!important;
+    cursor: not-allowed;
+    transform: none!important;
+}
+
+.mat-mdc-raised-button.mat-primary:hover {
+    transform: scaleX(1.06) scaleY(1.06)!important;
+    background-image: linear-gradient(213deg,#dd823b 0%,#ff612f 100%)!important;
+}
+
+.arrow-btn:after {
+    color: #fff;
+    line-height: inherit;
+    font-size: inherit!important;
+    opacity: 1;
+    margin-left: .3em;
+    left: auto;
+    font-family: ETmodules!important;
+    font-weight: 400!important;
+    content: "\e046";
+}
+
+button[mat-fab] {
+    background-image: linear-gradient(213deg,#dd823b 0%,#ff612f 100%)!important;
+}
+
+.top-margin-40 {
+    margin-top: 40px;
+}
+
+button mat-spinner {
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-bottom: -4px;
+}
+
+.data-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #3e707a;
+}
+
+.fancy-container {
+    padding: 30px;
+    background-color: #fff;
+    min-height: calc(100vh - 100px);
+    box-shadow: 0 0 162px -19px #0003;
+    border-radius: 0 0 20px 20px;
+}
+
+.big-data {
+    font-family: 'Open Sans' !important;
+    font-size: 56px !important;
+    color: rgba(0, 0, 0, .4) !important;
+}
+
+@keyframes stretch-in {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.side-bar-expander {
+    transition: all;
+    height: calc(100vh);
+    background-color: #f5f5f5;
+    animation-name: stretch-in;
+    width: 700px;
+    max-width: calc(100% - 33px);
+    transform-origin: 100% 0;
+    animation-duration: .25s;
+    position: fixed;
+    right: 0;
+    padding: 20px 0 0 20px;
+    box-shadow: -5px 0 5px #00000059;
+    z-index: 1;
+    top: 0;
+    backdrop-filter: blur(6px);
+    background-color: #fffc;
+}
+
+.side-bar-expander .close-btn {
+    margin-left: -63px;
+    border: 1px solid rgb(200,200,200);
+    min-width: unset;
+    background-color: #f5f5f5;
+    padding: 12px 0px 9px 18px;
+    border-right: unset;
+    border-radius: 50% 0 0 50%;
+    box-shadow: -3px 0 3px #00000059;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    background-color: #fffc;
+    position: absolute;
+}
+
+.right {
+    text-align: right;
+}
+
+table.table tbody tr td {
+    padding: 12px 20px;
+    font-size: 15px;
+}
+
+
+
+table.table thead tr th {
+    padding: 12px 20px;
+    color: #3e707a;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+table.table thead tr th:not(.right) {
+    text-align: left;
+}
+
+table.table thead tr th {
+    border-bottom: 2px solid #00000059;
+}
+
+table.table tbody tr:nth-child(odd) {
+    background-color: rgb(250, 250, 250);
+}
+
+table.table.mono tbody tr td {
+    font-family: 'Roboto Mono', monospace;
+}
